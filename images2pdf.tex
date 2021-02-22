@@ -1,0 +1,21 @@
+\documentclass[parskip]{scrartcl}
+\usepackage[margin=10mm,a6paper]{geometry}
+\usepackage{tikz}
+\usepackage{lipsum}
+
+\begin{document}
+
+%all your images from a notebook must be indexed by a number in their file names
+%example: in GoodNotes, if your notebook's name is "mynotebook", exporting all pages as images will give jpg files will be in the format of "mynotebook[page number].jpg"  
+
+%change {1,...8} to your range of numbers
+\foreach \x in {1,...,8}
+{ %\lipsum[\x]
+	\begin{center}
+		%you may change "mynotebook" by your notebook's name [the extension as well if not .jpg] and the scale if the image is too blown up or too small in each page of the pdf
+    		\includegraphics[scale=0.15]{mynotebook\x.jpg}
+    	\end{center}
+    	\clearpage
+}
+
+\end{document}
