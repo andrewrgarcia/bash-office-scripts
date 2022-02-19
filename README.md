@@ -17,7 +17,7 @@ Like WinZip (but for tar files and better)
 
 Usage: 
 
-``ruby
+```ruby
 bash compress.sh [folder_to_compress]         #compress file
 bash extract.sh [compressed_folder]           #extract compressed file
 ```
