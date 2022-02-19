@@ -16,6 +16,7 @@ This is especially useful for some of the current latest versions of [GoodNotes 
 Like WinZip (but for tar files and better)
 
 Usage: 
+
 `bash compress.sh [folder_to_compress]`
 
 `bash extract.sh [compressed_folder]`
