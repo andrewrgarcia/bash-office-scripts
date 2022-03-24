@@ -21,3 +21,7 @@ Usage:
 bash compress.sh [folder_to_compress]         #compress file
 bash extract.sh [compressed_folder]           #extract compressed file
 ```
+
+## rename files
+
+**rename_prefix.sh** renames with a prefix
