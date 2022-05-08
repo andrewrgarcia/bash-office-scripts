@@ -25,3 +25,9 @@ bash extract.sh [compressed_folder]           #extract compressed file
 ## rename files
 
 **rename_prefix.sh** renames with a prefix
+
+## select specific pages from a pdf to form a new pdf
+```ruby
+qpdf input.pdf --pages . 1,3 -- output.pdf   #makes new pdf with pages 1 and 3 from input.pdf file
+qpdf input.pdf --pages . 50-57,90 -- output.pdf   #makes new pdf with pages 50 through 57 and page 90 from input.pdf file
+```
