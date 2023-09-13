@@ -1,4 +1,4 @@
-# officework-tools
+# bash-office-scripts
 practical and document-editing scripts to have and use
 
 
