@@ -9,9 +9,12 @@ TEXFILE="$1"
 BASENAME="${TEXFILE%.tex}"
 EXTS=("aux" "log" "toc" "out" "nav" "snm" "bbl" "blg" "fls" "fdb_latexmk")
 
-# Compile twice for references
-pdflatex -interaction=nonstopmode -halt-on-error "$TEXFILE"
-pdflatex -interaction=nonstopmode -halt-on-error "$TEXFILE"
+
+# pdflatex -interaction=nonstopmode -halt-on-error "$TEXFILE"
+
+# dont halt on error
+pdflatex "$TEXFILE"
+
 
 # Remove auxiliary files
 for ext in "${EXTS[@]}"; do
